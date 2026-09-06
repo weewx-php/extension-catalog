@@ -35,7 +35,7 @@
       "id": "forecast",
       "name": "Forecast",
       "description": "Open-Meteo · 1–16 days",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "entry": "extension.php",
       "api": 2,
       "settings": "settings.json",
@@ -44,23 +44,23 @@
         "json"
       ],
       "repository": "weewx-php/extension-forecast",
-      "commit": "fdc8de437a9a2d04108f5e5946090040c630d607",
+      "commit": "8244764fef115463cada38ce3f605d4787dc6cd0",
       "reviewed_at": "2026-09-06",
       "review": "docs/review.md",
       "files": {
         "extension.php": "da730ea687694610a3c7b42956dcc5c2089bf1b5d16b976bbd1159a38d25cb1f",
-        "extension.json": "81e9bc400c4704ebf7239752cfdba4bccd8ef0f5480eeb79c4e47352a907fbf6",
+        "extension.json": "67080a58714e4098bc0e40cee2e1edb4b102c330aed11bcc0860838955caf316",
         "settings.json": "7ad3ce925dee7a2aa57541d0ffecc52825ab590537a06dcf1df1e960741af5a5",
-        "README.md": "bec2b138a22e70fa71146724a846be0c0b3a17262dac1d4d15ebe7b95ea2be22",
+        "README.md": "9453928f1016f88a22a7fedffa843a8705251fa550b7ac2023310962cf2c0195",
         "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
-        "docs/review.md": "82b90aaf06c974523b0c86c8c5b9312b4a04c606899fc3f182d775598ff0e520",
+        "docs/review.md": "3e185b1904032d23e3f2bdd8e27b2f7144bf2347f19ed9fd66ab4cf873737d9b",
         "tools/migrate.php": "34d0b80dcc958331abe72f5c69b54ddac56c680ae0f32e4281114f372642463c",
         "src/Data.php": "46f8faa2b50025fd14bdc491b1da7783ac99e47e5597698201cfa37c1288abcb",
         "src/Forecast.php": "378a0fb9555321a4df67807fd4fadfbae770b147b7a5b02499e8fa99e330cdac",
         "src/Migration.php": "5ba17d17f8ac45215390a5f0657275ed2a488ac77e176eb04094afebba4423dc",
         "src/OpenMeteo.php": "26e68226eed39cc26e4f9d9949085d3dbb4d4d99c7e4baa5892682113a51f5b9",
         "src/Options.php": "fe274bb974a811a90ea84bf9136dedb7cd988ce726cbe068bf2e4301e61aeb4f",
-        "src/Reader.php": "a1f22995faaea95ec374f95d821dd137ddf5bc5955759e8ff41c07526dde7082",
+        "src/Reader.php": "9c2029d95428f2da209709517b6911c500585d45529b8f19a6b65e96de04f426",
         "src/Store.php": "9adca84b83e8fae506674891e1bfedea797420e7edbddc1aa9c2b46e982c77ef"
       }
     }
