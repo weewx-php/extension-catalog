@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "extensions": [
+    {
+      "id": "climate",
+      "name": "Climate",
+      "description": "ERA5 · 1991–2020 · ±5 days",
+      "version": "0.1.0",
+      "entry": "extension.php",
+      "api": 1,
+      "php": "8.1",
+      "requires": [
+        "json"
+      ],
+      "repository": "weewx-php/extension-climate",
+      "commit": "22f61419a795ab46ae2d98fedbf1ae4682ba6891",
+      "reviewed_at": "2026-09-06",
+      "review": "docs/review.md",
+      "files": {
+        "extension.php": "a36265f4b4979b11048170df904cd56d27397e7c81edb54a6b01820d5c746f9f",
+        "extension.json": "48476ed34591716fd1ed522739bc9aab0ea203bf7742e90ba67cb5d7aa38dbee",
+        "README.md": "ab40ae78c61bae13eca42b124ed7dc24b96d47b9c2d3fe3bd661523858e8666e",
+        "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "src/Climate.php": "349d6b22d5ebb8a59a4c0bc4905f118b876974f97bc31ebc8638edf69d296471",
+        "src/Options.php": "df1dc14a3d8489c767945ab3d8218132b74902d7fca53385b0117415c23721a9",
+        "src/Provider.php": "878349cd53c244c7c8e49addd0ca18f41621090b5729fde0bbbc7214155a81f4",
+        "src/Store.php": "1b182134a7dfaf2ca05e5d23dfc266d1afdcc4d603c10d5526b2056afeeb3d3d",
+        "docs/review.md": "a365f493df8ecd3595c4e97204f60d000401cb7382fc037b8304e0dfa53207ab",
+        "docs/climate-live.json": "d16ae4593e2a3ab4d368256ef41765a44117149a3d7a57f72d24fcd7f48064ab"
+      }
+    }
+  ]
+}
