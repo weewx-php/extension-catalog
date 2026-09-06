@@ -57,6 +57,10 @@ def validate():
         files = release['files']
         require(isinstance(files, dict) and 1 <= len(files) <= 64, 'Invalid files')
         require(release['entry'] in files and release['entry'].endswith('.php') and release['review'] in files, 'Missing entry or review')
+        settings = release.get('settings')
+        if settings is not None:
+            package_path(settings)
+            require(release['api'] >= 2 and settings.endswith('.json') and settings in files, 'Invalid settings metadata')
         seen, total = set(), 0
         for path, checksum in files.items():
             package_path(path)
@@ -68,6 +72,12 @@ def validate():
             with opener.open(url, timeout=15) as response:
                 body = response.read(MAX_FILE + 1)
             require(len(body) <= MAX_FILE and hashlib.sha256(body).hexdigest() == checksum, 'Checksum mismatch: ' + path)
+            if path == settings:
+                schema = json.loads(body)
+                require(len(body) <= 65536 and schema['schema'] == 1
+                        and schema['scope'] in ('global', 'archive')
+                        and isinstance(schema['fields'], list)
+                        and 1 <= len(schema['fields']) <= 40, 'Invalid settings schema')
             total += len(body)
             require(total <= 4194304, 'Package too large')
         print(f"{release['id']} {release['version']}: {len(files)} files verified")
